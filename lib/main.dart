@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:respocivelayout/screens/allinone.dart';
 import 'package:respocivelayout/screens/desktopscreen.dart';
 import 'package:respocivelayout/widget/responsive.dart';
 
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:  Responsive(desktop: DesktopScreen(),mobile: HomeScreen(),tablet: DesktopScreen(),),
+      home:  MyHomePage(title: 'Flutter Demo Home Page'),
+      //Responsive(desktop: DesktopScreen(),mobile: HomeScreen(),tablet: DesktopScreen(),),
     );
   }
 }
